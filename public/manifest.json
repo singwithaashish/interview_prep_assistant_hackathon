@@ -1,9 +1,10 @@
 {
-  "name": "Next.js Browser Extension Demo",
-  "version": "1.0.0",
-  "manifest_version": 2,
-  "browser_action": {
-    "default_title": "Next.js Browser Extension Demo",
-    "default_popup": "index.html"
+    "name": "InterviewPrep Assistant",
+    "description": "Next.js Interview Prep Assistant with genAI",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+      "default_title": "InterviewPrep Assistant",
+      "default_popup": "index.html"
+    }
   }
-}
