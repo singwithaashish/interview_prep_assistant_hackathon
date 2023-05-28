@@ -1,3 +1,5 @@
+demo: https://interview-prep-assistant-hackathon.vercel.app/
+
 **InterviewPrep Assistant** InterviewPrep Assistant is an AI-powered tool designed to boost your performance in job interviews. By intelligently analyzing the given job description and your resume, it provides you with tailored potential interview questions, empowering you with targeted preparation. The tool not only supports you with valuable resources but also predicts your chances of securing the job. This comprehensive approach ensures a more strategic and effective preparation journey, enhancing your confidence and potential for success in the interview.
 
 
