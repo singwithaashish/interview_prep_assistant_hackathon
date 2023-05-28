@@ -209,7 +209,9 @@ export default function Home() {
         className={`flex flex-col items-center justify-center w-full p-24  min-h-screen `}
         id="results"
       >
-        <h1 className="text-3xl font-bold text-gray-900">Result</h1>
+        <h1 className="text-3xl font-bold text-gray-900">{
+        loading? "Loading..." : "Results"
+        }</h1>
         <p className=" text-gray-900 whitespace-pre-line">
           {result.split("\n").map((item, i) => {
             return (
@@ -246,9 +248,9 @@ export default function Home() {
           <button className="bg-gray-900 text-white rounded-lg p-4 w-3/12 ml-5">
             Submit
           </button>
-          <button onClick={() => setHistory([])} className="bg-gray-900 text-white rounded-lg p-4 w-3/12 ml-5">
+          {/* <button onClick={() => setHistory([])} className="bg-gray-900 text-white rounded-lg p-4 w-3/12 ml-5">
             Stop
-          </button>
+          </button> */}
         </form>
       </div>
     </main>
