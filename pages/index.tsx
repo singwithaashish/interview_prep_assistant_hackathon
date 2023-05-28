@@ -222,12 +222,9 @@ export default function Home() {
             );
           })}
           {history.map((message, idx) => {
-            if(idx === 0)
-            {
-              return (<h1 key={idx} className="text-3xl font-bold text-gray-900">Conversation begins</h1>)
-            }
+            
             return (
-              <div key={idx} className="my-4">
+              <div key={idx} className={`my-4 `}>
                 <div className="font-semibold text-gray-800">
                   {message.role.toUpperCase()}
                 </div>
