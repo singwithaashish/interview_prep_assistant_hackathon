@@ -17,20 +17,20 @@ export default async function handler(
   if (req.method !== "POST")
     return res.status(405).json({ error: "Method not allowed" });
 
-  if (!req.body.previousResponse || !req.body.currentQuery)
+  if (!req.body.previousResponse)
     return res.status(400).json({ error: "Missing required fields" });
 
-  const { previousResponse, currentQuery } = req.body;
+  const { previousResponse } = req.body;
   const apiResponse = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: [
       {
         role: "system",
-        content: `A summary of your previous response was ${previousResponse}. Now the user has asked you the following question please answer it`,
+        content: `your previous response was the following please summrise it so that it uses least possible words without losing any meaning`,
       },
       {
         role: "user",
-        content: currentQuery,
+        content: previousResponse,
       },
     ],
   });

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/chrome": "^0.0.237",
+    "@types/firefox-webext-browser": "^111.0.1",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
@@ -17,10 +19,16 @@
     "eslint-config-next": "13.4.4",
     "next": "13.4.4",
     "openai": "^3.2.1",
+    "pdf-parse": "^1.1.1",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "usellm": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/pdf-parse": "^1.1.1"
   }
 }
