@@ -13,7 +13,7 @@ export default function Home() {
 
   const [file, setFile] = useState<File | null>(null);
 
-  const llm = useLLM({ serviceUrl: "/api/llm" });
+  const llm = useLLM({ serviceUrl: "https://interview-prep-assistant-hackathon.vercel.app/api/llm" });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
